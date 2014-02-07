@@ -1,0 +1,285 @@
+@import 'font-awesome.css';
+
+@font-face {
+  font-family: 'Anonymous';
+  src: url('fonts/Anonymous_Pro-webfont.eot?') format('eot'), url('fonts/Anonymous_Pro-webfont.woff') format('woff'), url('fonts/Anonymous_Pro-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Anonymous';
+  src: url('fonts/Anonymous_Pro_B-webfont.eot?') format('eot'), url('fonts/Anonymous_Pro_B-webfont.woff') format('woff'), url('fonts/Anonymous_Pro_B-webfont.ttf') format('truetype');
+  font-weight:bold;
+}
+
+@font-face {
+  font-family: 'Anonymous';
+  src: url('fonts/Anonymous_Pro_I-webfont.eot?') format('eot'), url('fonts/Anonymous_Pro_I-webfont.woff') format('woff'), url('fonts/Anonymous_Pro_I-webfont.ttf') format('truetype');
+  font-style:italic;
+}
+
+
+*
+{
+    margin: 0px; padding: 0px;
+    font-weight: normal;
+}
+
+strong, b {font-weight:bold;}
+
+body
+{
+    font-family: "Anonymous", Arial, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    
+    line-height:120%;
+    font-size:11pt;
+
+}
+
+h1, h1 a, h2, h3
+{
+    color:black;
+}
+
+a:visited
+{
+    color: #7b797a;
+}
+
+header
+{
+    margin-bottom: 8px;
+    height:36px;
+    
+    background-color: black;
+}
+
+header h1
+{
+    font-size: 22pt;
+    line-height: 100%;
+    
+    color:white;
+    
+    padding:0px 26px;
+}
+
+header nav
+{
+    float:right;
+    margin-right:26px;
+    display:table;
+}
+
+header nav a
+{
+    color:white;
+    text-decoration:none;
+    
+    display:table-cell;
+    padding:0px 6px;
+    vertical-align:middle;
+    text-align:center;
+    
+    height:40px;
+    min-width:34px;
+}
+
+section#content
+{
+    max-width:900px;
+    margin:0 auto;
+}
+
+aside#project
+{
+    float:left;
+    width:180px;
+    margin-left: 8px;
+}
+
+aside#project i
+{
+    display:block;
+    height:170px; width:170px;
+    
+    padding:5px;
+    font-size:120pt;
+}
+
+aside#project h1
+{
+    color:black;
+    margin:22px 0px;
+    text-align: right;
+    
+    font-size:13pt;
+}
+
+aside#project p
+{
+    margin:22px 0px;
+    padding-bottom:22px;
+    
+    border-bottom:1px solid #ddd;
+    
+    text-align: right;
+}
+
+aside#project nav 
+{
+    text-align: right;
+    margin-bottom:28px;
+}
+
+aside#project nav ul
+{
+    list-style-type: none;
+}
+
+aside#project nav ul li {margin:4px 0px;}
+
+aside#project nav ul li.spacer
+{
+    margin-top: 18px;
+}
+
+aside#project nav ul li.bottom_spacer
+{
+    margin-top: 22px;
+}
+
+
+nav#tabs
+{
+    margin-left:200px;
+    overflow:hidden;
+    
+    margin-bottom: 6px;
+}
+
+nav#tabs ul
+{
+    overflow:visible;
+    border-bottom:1px solid #dfdfdf;
+    height:40px;
+}
+
+nav#tabs ul li
+{
+    display:inline-block;
+    float:left;
+    overflow: visible;
+}
+
+nav#tabs ul li a
+{
+    display: inline-block;
+    color:black;
+    text-decoration:none;
+    
+    padding:12px 16px;
+    height:16px;
+}
+
+/*nav#tabs ul li a:hover
+{
+    background-color: #eee;
+}*/
+
+nav#tabs ul li.current a
+{
+    border-top:1px solid #dfdfdf;
+    border-left:1px solid #dfdfdf;
+    border-right:1px solid #dfdfdf;
+    
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+    background-color: white;
+    
+    padding-bottom:12px;
+}
+
+ul#items
+{
+    margin-left: 200px;
+    
+    list-style-type: none;
+}
+
+ul.tasks
+{
+    overflow:auto;
+    
+}
+
+ul.tasks li
+{
+    overflow:auto;
+    
+    padding:8px 12px;
+    margin:0px 10px;
+    
+    border-bottom:1px solid #ddd;
+}
+
+ul.tasks li h1
+{
+    font-size:15pt;
+}
+
+ul.tasks li.completed *
+{
+    text-decoration:line-through;
+    color:#a7a5a4;
+}
+
+ul.tasks li a:first-child
+{
+    display:table-cell;
+    vertical-align:middle;
+    font-size:18pt;
+    
+    text-decoration:none;
+    
+    color:black;
+    padding:0px 24px 0px 8px;
+}
+
+ul.tasks li a:first-child:before {
+  content: "\f096";
+}
+
+ul.tasks li.completed a:first-child:before {
+  content: "\f046";
+}
+
+ul.tasks li>div
+{
+    display:table-cell;
+}
+
+ul.tasks li form
+{
+    padding-left:8px;
+    text-align:right;
+}
+
+ul.tasks li textarea
+{
+    width:100%;
+    height:48px;
+}
+
+table 
+{
+    border-collapse:collapse;
+}
+
+th
+{
+    background:#829f14;
+    color:white;
+}
