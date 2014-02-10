@@ -4,11 +4,43 @@
     {
         this.router = new app.Router()
         
-        var view = new app.View('<p>This is the Homepage</p>')
+        this.model = {
+            
+            projects: {
+                1: {
+                    id: 1,
+                    title: "Scope",
+                    description: "My new project management thingy.",
+                    tasks: {
+                        1: {
+                            id: 1,
+                            title: "Create outline design",
+                            description: "Create an outline design for the web app",
+                            completed: true,
+                        },
+                        2: {
+                            id:2,
+                            title: "Enter all my projects",
+                            description: "Add in all my special projects",
+                            completed: false,
+                        },
+                    },
+                },
+                2: {
+                    id: 2,
+                    title: "Other Project",
+                    description: "My other project.",
+                    tasks: {},
+                },
+            }
+            
+        }
+        
+        var view = new app.View('project_list_template', this.model)
         this.router.add_route('/', view)
         
-        var view = new app.View('<p>This is page 1</p>')
-        this.router.add_route('/page1.html', view)
+        //var view = new app.View('project_template')
+        //this.router.add_route('/*/tasks', view, )
     }
     
     var test_app = new TestApp()

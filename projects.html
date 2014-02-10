@@ -22,6 +22,8 @@
 </header>
 
 <section id="content">
+    <script type="text/html" id="project_list_template">
+
     <aside id="project">
         <i class="fa fa-list"></i>
         
@@ -45,7 +47,7 @@
     
     
     
-    <ul id="items" class="projects">
+    <ul id="projects" class="projects">
         <li>
             <form method="post" action="#">
                 <input type="text">
@@ -53,19 +55,17 @@
                 <input type="submit" value="Save">
             </form>
         </li>
+        {{#each projects}}
         <li>
-            <a href="#"><i class="fa fa-cogs"></i> Scope</a>
+            <a href="{{id}}/tasks"><i class="fa fa-cogs"></i> {{title}}</a>
         </li>
-        
-        <li>
-            <a href="#"><i class="fa fa-cogs"></i> Project 2</a>
-        </li>
-        
-        <li>
-            <a href="#"><i class="fa fa-cogs"></i> Project 3</a>
-        </li>
+        {{/each}}
     </ul>
+    </script>
 </section>
+<script src="js/view.js" charset="utf-8"></script>
+<script src="js/router.js" charset="utf-8"></script>
 
+<script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
